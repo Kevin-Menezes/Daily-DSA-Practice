@@ -1,0 +1,21 @@
+{
+    "java.project.sourcePaths": [
+        "1)_SieveOfEratosthenes",
+        "2)_Patterns",
+        "3)_GCD",
+        "4)_Subarrays",
+        "5)_Matrix",
+        "6)_Conversions",
+        "7)_BitManipulation.java",
+        "8)_Recursion",
+        "9)_RecursionAdvanced",
+        "10)_Threads",
+        "11)_Searching",
+        "12)_Sorting",
+        "13)_Hashing",
+        "14)_Heap",
+        "15)_LinkedList",
+        "16)_Stack",
+        "17)_Queue"
+    ]
+}
