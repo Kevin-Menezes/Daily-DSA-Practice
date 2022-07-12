@@ -6,14 +6,14 @@ public class DuplicateLLRandomPointer {
 
     static Node head;
 
-    // Constructor
+    
     static class Node {
 
         int data;
         Node next;
         Node random; // Random pointer
 
-        Node(int d) {
+        Node(int d) { // Constructor
             data = d;
             next = null;
         }
