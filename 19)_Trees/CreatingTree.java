@@ -5,8 +5,8 @@ public class CreatingTree {
     // Nested class
     static class Node {
 
-        Node left, right;
         int data;
+        Node left, right;
 
         public Node(int data) { // Constructor
             this.data = data;
@@ -18,7 +18,7 @@ public class CreatingTree {
 
         Node root = null;
 
-        System.out.println("Enter data : "); // root
+        System.out.print("Enter data : "); // root
         int data = s.nextInt();
 
         if (data == -1) {
@@ -27,13 +27,46 @@ public class CreatingTree {
 
         root = new Node(data);
 
-        System.out.println("Enter left : " + data); // left
+        System.out.print("Enter left of " + data); // left
         root.left = createTree();
 
-        System.out.println("Enter right : " + data); // right
+        System.out.print("Enter right of " + data); // right
         root.right = createTree();
 
         return root;
+    }
+
+    // Function to print INORDER traversal (LNR)
+    static void inOrder(Node root) {
+
+        if (root == null)
+            return;
+
+        inOrder(root.left);
+        System.out.print(root.data);
+        inOrder(root.right);
+    }
+    
+    // Function to print PREORDER traversal (NLR)
+    static void preOrder(Node root) {
+
+        if (root == null)
+            return;
+
+        System.out.print(root.data);
+        preOrder(root.left);
+        preOrder(root.right);
+    }
+
+    // Function to print POSTORDER traversal (LRN)
+    static void postOrder(Node root) {
+
+        if (root == null)
+            return;
+
+        postOrder(root.left);        
+        postOrder(root.right);
+        System.out.print(root.data);
     }
 
     static Scanner s = null; // Making Scanner global
@@ -42,7 +75,16 @@ public class CreatingTree {
         
         s = new Scanner(System.in);
         Node root = createTree();
-        System.out.println(root);;
+        System.out.println(root.data);
+
+        inOrder(root);
+        System.out.println(" ");
+        
+        preOrder(root);
+        System.out.println(" ");
+        
+        postOrder(root);
+        System.out.println(" ");
 
     }
     
