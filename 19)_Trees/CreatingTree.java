@@ -27,10 +27,10 @@ public class CreatingTree {
 
         root = new Node(data);
 
-        System.out.print("Enter left of " + data); // left
+        System.out.println("Enter left of " + data); // left
         root.left = createTree();
 
-        System.out.print("Enter right of " + data); // right
+        System.out.println("Enter right of " + data); // right
         root.right = createTree();
 
         return root;
