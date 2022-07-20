@@ -16,6 +16,8 @@
         "14)_Heap",
         "15)_LinkedList",
         "16)_Stack",
-        "17)_Queue"
+        "17)_Queue",
+        "18)_Deque",
+        "19)_Trees"
     ]
 }
