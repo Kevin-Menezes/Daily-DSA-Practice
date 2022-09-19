@@ -10,7 +10,7 @@ public class DecToBin
         System.out.println("Enter the decimal number : ");
         int dnum = s.nextInt();
 
-        int bnum[] = new int[50];
+        int bnum[] = new int[50]; // Creating array
         int i = 0;
 
         while(dnum>0)
@@ -23,7 +23,7 @@ public class DecToBin
 
         while(i>=0)
         {
-            System.out.print(bnum[i--]+" ");
+            System.out.print(bnum[i--]+" "); // We go reverse in the array to print
         }
 
     }

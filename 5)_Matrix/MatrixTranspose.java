@@ -8,7 +8,7 @@ public class MatrixTranspose
         System.out.print("Enter the number of rows in Matrix : ");
         int row = s.nextInt();
 
-        System.out.print("Enter the number of rows in Matrix : ");
+        System.out.print("Enter the number of columns in Matrix : ");
         int col = s.nextInt();
 
         int m[][] = new int[row][col];

@@ -45,7 +45,7 @@ public class MatrixMul
             }
         }
 
-        // Multiplied array
+        // Multiplied array O(n3)
         for(int i=0;i<row1;i++)
         {
             for(int j=0;j<col2;j++)
