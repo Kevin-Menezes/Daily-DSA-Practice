@@ -14,7 +14,7 @@ public class SOE
         // We traverse in multiples of 2,3,4..... to make them as false
         for(int i=2;i<=Math.sqrt(n);i++) // We take till sqrt(n) coz if numbers less than sqrt(n) get crossed out then automatically its multiples which are greater than sqrt(n) get crossed out
         {
-            for(int j=2*i;j<=n;j+=i) // 2..4..6 | 3..6..9 | 4..8..12..16
+            for(int j=2*i;j<=n;j+=i) // 4..6 | 6..9 | 4..8..12..16
             {
                 arr[j] = false;
             }

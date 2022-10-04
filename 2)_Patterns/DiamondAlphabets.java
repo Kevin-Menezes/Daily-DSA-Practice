@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //      A
 //     B B
 //    C   C
@@ -15,6 +17,63 @@
 // Then use ABC
 
 public class DiamondAlphabets {
+
+    public static void main(String args[]) {
+
+        Scanner s = new Scanner(System.in);
+        
+        System.out.print("Enter the rows : ");
+        int rows = s.nextInt();
+
+        char[] arr = {' ','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+                 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
+                'W', 'X', 'Y', 'Z' };
+                 
+
+        // Top half
+        for (int i = 1; i <= rows; i++) {
+
+            // For starting space
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= i; j++) {
+
+                if (j == 1 || j == i) {
+                    System.out.print(arr[i]+" ");
+                } else {
+                    System.out.print(" ");
+                    System.out.print(" ");
+                }
+
+            }
+
+            System.out.println(" ");
+            
+        }
+        
+        // Bottom half
+        for (int i = rows-1; i >= 1; i--) {
+
+            // For starting space
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= i; j++) {
+
+                if (j == 1 || j == i) {
+                    System.out.print(arr[i]+" ");
+                } else {
+                    System.out.print(" ");
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.println(" ");
+        }
+    }
 
 
 

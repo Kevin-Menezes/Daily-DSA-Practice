@@ -37,7 +37,7 @@ class SieveOfEratosthenes {
         System.out.println("================================================");
 
         // Basic GCD
-        System.out.println(gcdBasic(15,27));
+        System.out.println(gcdBasic(15, 27));
 
         // Normal GCD
         System.out.println(gcdNormal(15, 27));
@@ -45,9 +45,10 @@ class SieveOfEratosthenes {
         // GCD
         System.out.println(gcd(15, 27));
 
-
     }
     
+    // ===================== Functions =========================
+
     // Normal way to find power of a number
     static int power(int a, int b) {
         int pow = 1;
